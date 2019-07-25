@@ -73,7 +73,7 @@ contract('CustomERC721Token', accounts => {
         })
 
         it('should return contract owner', async function () {
-          let contract_owner = await this.contract.getOwner.call({from:account0});
+          let contract_owner = await this.contract.getOwner.call({from:account_one});
           assert.equal(contract_owner,account_one,"Contract owner does not match.")
         })
 

@@ -18,7 +18,7 @@ contract('SolnSquareVerifier', accounts => {
             const { proof: { a, b, c }, inputs: input } = proof;
 
             let key = await this.contract.getVerifierKey.call(a, b, c, input);
-            console.log(key);
+            //console.log(key);
 
             let result = await this.contract.addSolution(2, account_two, key);
 
@@ -31,12 +31,12 @@ contract('SolnSquareVerifier', accounts => {
             const { proof: { a, b, c }, inputs: input } = proof;
 
             let totalSupply = (await this.contract.totalSupply.call()).toNumber();
-            console.log(totalSupply);
-            console.log(account_two+a+b+c+input)
+            //console.log(totalSupply);
+            //console.log(account_two+a+b+c+input)
             let isCorrect = await this.contract.mintToken(account_two, 5, a, b, c, input, {from: account_one});
 
             let newTotalSupply = (await this.contract.totalSupply.call()).toNumber();
-            console.log(newTotalSupply);
+            //console.log(newTotalSupply);
             assert.equal(totalSupply+1, newTotalSupply, "Invalid proof result");
         })
 
