@@ -1,4 +1,4 @@
-# Udacity Blockchain Capstone
+# Real Estate Marketplace in Ethereum
 
 In this project a real estate marketplace problem is addressed. Therefore, minting your own tokens to represent your title to the properties, is enabled. Before you mint a token, you need to verify you own the property. To this end, zk-SNARKs are used to create a verification system which can prove you have title to the property without revealing that specific information on the property.
 
