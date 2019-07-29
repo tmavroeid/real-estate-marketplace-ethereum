@@ -11,6 +11,16 @@ contract address: 0x1D44aD2D886Cef339C2810BD5c5492a3e2777654
 The contracts' addresses are shown in the following image.
 ![truffle test](images/migrations.png)
 
+The OpenSea MarketPlace Storefront link is:
+```
+https://rinkeby.opensea.io/assets/bleeding-edge-tokens
+```
+![truffle test](images/storefrontlink.png)
+
+The tokens created are the following:
+
+![truffle test](images/tokens.png)
+
 ## Getting Started
 To install this project, download or clone the repo, then:
 ```
